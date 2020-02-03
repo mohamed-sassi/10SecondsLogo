@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IGC LOGO</title>
+    
+</head>
+<body style="padding: 10px;">
+    <input type="file" id="imagesInput" style="display: none;" multiple>
+    <input type="file" id="logoInput" style="display: none;">
+    <button onclick="document.getElementById('logoInput').click()"  style="display: block; margin: auto;" class="btn-3d red">Upload Logo</button><br>
+    <img src="" id="logoPreview" style="display:block;margin: auto;">
+    <button onclick="document.getElementById('imagesInput').click()"  style="display: block; margin: auto;" class="btn-3d purple">Upload Images</button><br>
+    <button onclick="addLogo()"  id="addlogo" style="display: none; margin: auto;" class="btn-3d cyan">Add logo</button><br>
+    <button onclick="download()" id="download" style="display: none; margin: auto;" class="btn-3d green" >Download</button>
+    <div id="images" style="padding-top: 25px;"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
